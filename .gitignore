@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*build/
+*.egg-info/
+dist/
+venv/
+env/
+.env*
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build/
+.DS_Store
+
+# IDE/Editor specific
+.vscode/
+.idea/
