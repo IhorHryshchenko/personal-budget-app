@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\backend",
+    "\\backend\\budget",
     "\\backend\\core"
   ],
-  "SelectedNode": "\\backend\\core\\settings.py",
+  "SelectedNode": "\\backend\\budget\\models.py",
   "PreviewInSolutionExplorer": false
 }

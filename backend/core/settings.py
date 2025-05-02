@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',  # Додали DRF
-    'budget',         # Додали наш додаток
+    'rest_framework',
+    'django_filters',  
+    'budget',         
 ]
 
 MIDDLEWARE = [
@@ -81,11 +82,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'personal_budget_db',  # Назва твоєї бази даних
-        'USER': 'postgres',          # Ім'я користувача PostgreSQL (за замовчуванням postgres)
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'), # Пароль, який ти задав при встановленні
-        'HOST': 'localhost',         # Зазвичай localhost або 127.0.0.1
-        'PORT': '5432',              # Стандартний порт PostgreSQL
+        'NAME': 'personal_budget_db',  # пїЅпїЅпїЅпїЅпїЅ пїЅпїЅоєї пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        'USER': 'postgres',          # пїЅпїЅ'пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ PostgreSQL (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ postgres)
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'), # пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        'HOST': 'localhost',         # пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ localhost пїЅпїЅпїЅ 127.0.0.1
+        'PORT': '5432',              # пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ PostgreSQL
     }
 }
 
